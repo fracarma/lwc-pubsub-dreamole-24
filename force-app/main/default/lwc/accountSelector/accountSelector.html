@@ -1,0 +1,22 @@
+<template>
+    <lightning-card  title="Account Selector">
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-tile label="Bruce Wayne" href="#" onclick={handleClick} id="bruce" value="bruce" type="media">
+                <lightning-avatar slot="media" src="https://www.lightningdesignsystem.com/assets/images/avatar1.jpg" fallback-icon-name="standard:person_account" alternative-text="Bruce Wayne"></lightning-avatar>
+                <ul class="slds-list_horizontal slds-has-dividers_right">
+                    <li class="slds-item">Billionaire, Gotham City</li>
+                    <li class="slds-item">Rich</li>
+                </ul>
+            </lightning-tile>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-tile label="Batman" href="#" onclick={handleClick} id="batman" value="batman" type="media">
+                <lightning-avatar slot="media" src="https://www.lightningdesignsystem.com/assets/images/avatar1.jpg" fallback-icon-name="standard:person_account" alternative-text="Bruce Wayne"></lightning-avatar>
+                <ul class="slds-list_horizontal slds-has-dividers_right">
+                    <li class="slds-item">Superhero, Gotham City</li>
+                    <li class="slds-item">Dark Knight</li>
+                </ul>
+            </lightning-tile>
+        </div>
+    </lightning-card>
+</template>
