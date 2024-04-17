@@ -1,24 +1,24 @@
 <apex:page>
     <apex:includeLightning/>
-    <div id="accountViewer"></div>
-    <div id="accountSelector"></div>
+    <div id="eventSubscriber"></div>
+    <div id="eventPublisher"></div>
     <script>
         $Lightning.use(
-          "c:accountViewApp", // name of the Lightning app
+          "c:eventContainerApp", // name of the Lightning app
           function () {
             // Callback once framework and app loaded
             $Lightning.createComponent(
-              "c:accountViewer", // top-level component of your app
+              "c:eventSubscriber", // top-level component of your app
               {}, // attributes to set on the component when created
-              "accountViewer", // the DOM location to insert the component
+              "eventSubscriber", // the DOM location to insert the component
               function (cmp) {
                 // callback when component is created and active on the page
               },
             );
             $Lightning.createComponent(
-              "c:accountSelector", // top-level component of your app
+              "c:eventPublisher", // top-level component of your app
               {}, // attributes to set on the component when created
-              "accountSelector", // the DOM location to insert the component
+              "eventPublisher", // the DOM location to insert the component
               function (cmp) {
                 // callback when component is created and active on the page
               },
