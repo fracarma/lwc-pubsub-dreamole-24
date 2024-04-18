@@ -1,5 +1,5 @@
 import { LightningElement, wire } from 'lwc';
-import { registerListener, unregisterAllListener } from 'c/pubsub';
+import { registerListener, unregisterAllListeners } from 'c/pubsub';
 import { CurrentPageReference } from 'lightning/navigation';
 
 export default class EventSubscriber extends LightningElement {
@@ -19,7 +19,7 @@ export default class EventSubscriber extends LightningElement {
     }
 
     disconnectedCallback() {
-        unregisterAllListener(this);
+        unregisterAllListeners(this);
     }
 
     handleEventReceived(event) {
