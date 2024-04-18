@@ -1,7 +1,10 @@
 <apex:page>
     <apex:includeLightning/>
-    <div id="eventSubscriber"></div>
-    <div id="eventPublisher"></div>
+    <apex:slds/>
+    <div class="slds-m-around_medium">
+      <div id="eventSubscriber" class="slds-m-around_medium"></div>
+      <div id="eventPublisher" class="slds-m-around_medium"></div>
+    </div>
     <script>
         $Lightning.use(
           "c:eventContainerApp", // name of the Lightning app
